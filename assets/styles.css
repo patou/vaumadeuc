@@ -1,0 +1,189 @@
+/*!
+ * Start Bootstrap - Scrolling Nav HTML Template (http://startbootstrap.com)
+ * Code licensed under the Apache License v2.0.
+ * For details, see http://www.apache.org/licenses/LICENSE-2.0.
+ */
+
+body {
+    width: 100%;
+    height: 100%;
+}
+
+html {
+    width: 100%;
+    height: 100%;
+}
+
+@media(min-width:767px) {
+    .navbar {
+        padding: 20px 0;
+        -webkit-transition: background .5s ease-in-out, padding .5s ease-in-out;
+        -moz-transition: background .5s ease-in-out, padding .5s ease-in-out;
+        transition: background .5s ease-in-out, padding .5s ease-in-out;
+    }
+    .top-nav-collapse {
+        padding: 0;
+    }
+}
+/* fonts */
+/* navbar */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+    font-family: 'Rancho', cursive;
+}
+
+body {
+    padding-bottom: 40px;
+    color: #755e4e;
+    background-color: #ffffff;
+    background: url(bg.png) repeat;
+    font-family: 'Overlock', "Times New Roman", Times, serif;
+}
+
+a {
+    color: #009788;
+}
+
+a:hover,
+a:focus {
+    color: #ff6c00;
+    text-decoration: none;
+}
+
+.navbar {
+    font-family: Georgia, "Times New Roman", Times, serif;
+    background: #ffffff;
+    background: rgba(255, 255, 255, 0.9);
+}
+
+.navbar-brand {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.navbar-nav {
+	font-size: 15px;
+}
+
+.navbar-nav li a.page-scroll {
+	color: #372518;
+}
+
+.navbar-nav li.active a.page-scroll {
+	color: #372518;
+	background-color: #fbf2e2;
+}
+
+.navbar-nav li a.page-scroll:hover {
+	background-color: #fbf2e2;	
+}
+
+.navbar-nav li.active a.page-scroll:hover {
+	background-color: #fbf2e2;
+	
+}
+
+.header-image {
+    height: auto;
+    display: block;
+    width: 100%;
+    text-align: center;
+	margin-top: 120px;
+}
+
+.header-image img {
+    height: 300px;
+	margin-bottom: 20px;
+}
+
+.header-image h1 {
+	font: 35px Georgia, Times, "Times New Roman", serif;
+	text-transform: uppercase;
+	color: #372518;
+	background-color: rgba(255, 255, 255, 0.8);
+	margin-bottom: 0;
+}
+
+.header-image h2 {
+	font: 20px/150% Georgia, "Times New Roman", Times, serif;
+	color: #ce9630;
+	background-color: rgba(255, 255, 255, 0.8);
+	margin-top: -10px;
+}
+
+.val-andre {
+    height: 300px;
+    width: 100%;
+    background: linear-gradient(to bottom, rgb(246, 243, 237) 0%, rgba(255, 255, 255, 0) 100%), url(valandre.jpg) 0 bottom / 100% no-repeat fixed;
+    opacity: 1;
+    bottom: 0;
+}
+/* Demo Sections - You can use these as guides or delete them - the scroller will work with any sort of height, fixed, undefined, or percentage based.
+The padding is very important to make sure the scrollspy picks up the right area when scrolled to. Adjust the margin and padding of sections and children
+of those sections to manage the look and feel of the site. */
+
+#intro img {
+	width: 300px;
+	margin-right: 20px;
+	margin-left: 20px;
+}
+
+section {
+    min-height: 100%;
+    padding-top: 50px;
+    text-align: center;
+}
+
+section .container {
+    max-width: 1000px;
+    font-size: 120%;
+    padding-bottom: 50px;
+}
+
+section h1 {
+    font-size: 60px;
+}
+
+h1.font-effect-canvas-print {
+    color: #ce9630;
+}
+
+pre {
+	background-color: transparent;
+	text-align: left;
+	white-space: pre;
+}
+
+.intro-section {}
+
+.about-section {
+    background-color: white;
+}
+
+.produits-section {}
+
+.acheter-section {
+    background: white;
+	font-size: 12px;
+}
+
+#google-map {
+    width: 100%;
+    height: 400px;
+}
+
+footer {
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
