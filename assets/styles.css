@@ -14,6 +14,104 @@ html {
     height: 100%;
 }
 
+body {
+    font-family: Arial, sans-serif;
+}
+
+a {
+    color: #009788;
+}
+
+a:hover,
+a:focus {
+    color: #ff6c00;
+    text-decoration: none;
+}
+
+.navbar-default {
+  background-color: #ffffff;
+  border-color: #f9f9f9;
+}
+.navbar-default .navbar-brand {
+  color: #59403a;
+}
+.navbar-default .navbar-brand:hover, .navbar-default .navbar-brand:focus {
+  color: #d0850b;
+}
+.navbar-default .navbar-text {
+  color: #59403a;
+}
+.navbar-default .navbar-nav > li > a {
+  color: #59403a;
+  line-height: 40px;
+}
+.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
+  color: #d0850b;
+  font-style: italic;
+}
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
+  color: #d0850b;
+  background-color: #f9f9f9;
+}
+.navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus {
+  color: #d0850b;
+  background-color: #f9f9f9;
+}
+.navbar-default .navbar-toggle {
+  border-color: #f9f9f9;
+}
+.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
+  background-color: #f9f9f9;
+}
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: #59403a;
+}
+.navbar-default .navbar-collapse,
+.navbar-default .navbar-form {
+  border-color: #59403a;
+}
+.navbar-default .navbar-link {
+  color: #59403a;
+}
+.navbar-default .navbar-link:hover {
+  color: #d0850b;
+}
+
+@media (max-width: 767px) {
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a {
+    color: #59403a;
+  }
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover, .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
+    color: #d0850b;
+  }
+  .navbar-default .navbar-nav .open .dropdown-menu > .active > a, .navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover, .navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus {
+    color: #d0850b;
+    background-color: #f9f9f9;
+  }
+}
+
+.navbar {
+    font-family: Arial, sans-serif;
+    background-color: #FFFFFF;
+    border: none;
+    height: 70px;
+}
+
+.navbar-brand {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.navbar-nav {
+    font-size: 15px;
+}
+
+@media(max-width:1000px) {
+    .navbar-nav {
+        font-size: 12px;
+    }
+}
+
 @media(min-width:767px) {
     .navbar {
         padding: 20px 0;
@@ -25,8 +123,209 @@ html {
         padding: 0;
     }
 }
-/* fonts */
-/* navbar */
+
+@media(min-width:770px) {
+
+
+section {
+    min-height: 100%;
+    /* padding-top: 50px; */
+
+    background-position: center;
+    text-align: center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    /* background-attachment: fixed; */
+    /* padding-bottom: 50px; */
+}
+
+section .container {
+    max-width: 1000px;
+    font-size: 120%;
+    padding-top: 50px;
+}
+
+section article {
+    background-color: rgba(255, 255, 255, 0.85);
+    width: 500px;
+    display: block;
+    padding: 20px;
+    padding-top: 10px;
+    float: right;
+    margin-top: 70px;
+    margin-right: 50px;
+    text-align: left;
+}
+
+}
+
+@media(max-width:769px) {
+
+section {
+    background-position: top;
+    text-align: left;
+    /* float: left; */
+    overflow: hidden;
+    -webkit-background-size: 100%;
+    -moz-background-size: 100%;
+    -o-background-size: 100%;
+    background-size: 100%;
+    /* background-clip: padding-box; */
+    background-repeat: no-repeat;
+    /* background-attachment: fixed; */
+    /* padding-bottom: 50px; */
+}
+
+section article {
+    display: block;
+    padding: 20px;
+    padding-top: 10px;
+    float: right;
+    margin-top: 300px;
+        width: 100%;
+}
+
+}
+
+
+.accueil-section {
+    text-align:center;
+}
+
+.logo-vaumadeuc {
+    margin-top:-20px;
+    height: 280px;
+}
+
+.accueil-section .container-fluid {
+    margin-top:50px;
+}
+
+.accueil-section h2 {
+  color: #A1A1A1;
+  font-size: 20px;
+  text-align: left;
+  margin-left: 20px;
+}
+
+.accueil-section p {
+  font-size: 14px;
+  text-align: left;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.accueil-section a {
+    display: inline-block;
+}
+
+.accueil-section a img {
+    opacity: 0.8;
+    /*    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;*/
+    size: cover;
+    width: 100%;
+}
+
+.accueil-section a:hover img {
+    opacity: 1;
+}
+
+#accueil-fromages {
+    padding: 0px;
+}
+
+#accueil-glaces {
+    padding: 0px;
+}
+
+#accueil-visiter {
+    padding: 0px;
+}
+
+@media(max-width:770px) {
+
+    .accueil-section a img {
+        width: 100%;
+    }
+}
+
+.accueil-section .row:nth-child(2) {
+    bottom: 0px;
+    position: absolute;
+}
+
+.fromagerie-section {
+    background-image: url("../photos/fromagerie.jpg");
+}
+
+.fromagerie2-section {
+    background-image: url("../photos/fromagerie2.jpg");
+}
+
+.fromagerie2-section h3 {
+    display: inline;
+    font-size: 13px;
+}
+
+.fromagerie2-section p {
+    font-size: 12px;
+}
+
+.fromagerie3-section {
+    background-image: url("../photos/fromagerie3.jpg");
+}
+
+.fromagerie4-section {
+    background-image: url("../photos/fromagerie4.jpg");
+}
+
+.fromagerie5-section {
+    background-image: url("../photos/fromagerie5.jpg");
+}
+
+.fromagerie6-section {
+    background-image: url("../photos/fromagerie6.jpg");
+}
+
+.fromagerie7-section {
+    background-image: url("../photos/fromagerie7.jpg");
+}
+
+.glaces-section {
+    background-image: url("../photos/glaces.jpg");
+}
+
+.visiter-section {
+    background-image: url("../photos/visiter.jpg");
+}
+
+.visiter2-section {
+    background-image: url("../photos/visiter2.jpg");
+}
+
+.acheter-section {
+    background-image: url("../photos/acheter.jpg");
+}
+
+.acheter-section article {
+    float: left;
+    margin-left: 50px;
+}
+
+@media(max-width:767px) {
+    .acheter-section article {
+        float: right;
+        margin-left: 0px;
+    }
+}
+
+.recettes-section {
+    background-image: url("../photos/recettes.jpg");
+}
 
 h1,
 h2,
@@ -40,115 +339,10 @@ h6,
 .h4,
 .h5,
 .h6 {
-    font-family: 'Rancho', cursive;
-}
-
-body {
-    padding-bottom: 40px;
+    font-family: Sanchez;
     color: #755e4e;
-    background-color: #ffffff;
-    background: url(bg.png) repeat;
-    font-family: 'Overlock', "Times New Roman", Times, serif;
-}
-
-a {
-    color: #009788;
-}
-
-a:hover,
-a:focus {
-    color: #ff6c00;
-    text-decoration: none;
-}
-
-.navbar {
-    font-family: Georgia, "Times New Roman", Times, serif;
-    background: #ffffff;
-    background: rgba(255, 255, 255, 0.9);
-}
-
-.navbar-brand {
-    font-weight: bold;
-    font-size: 20px;
-}
-
-.navbar-nav {
-	font-size: 15px;
-}
-
-.navbar-nav li a.page-scroll {
-	color: #372518;
-}
-
-.navbar-nav li.active a.page-scroll {
-	color: #372518;
-	background-color: #fbf2e2;
-}
-
-.navbar-nav li a.page-scroll:hover {
-	background-color: #fbf2e2;	
-}
-
-.navbar-nav li.active a.page-scroll:hover {
-	background-color: #fbf2e2;
-	
-}
-
-.header-image {
-    height: auto;
-    display: block;
-    width: 100%;
-    text-align: center;
-	margin-top: 120px;
-}
-
-.header-image img {
-    height: 300px;
-	margin-bottom: 20px;
-}
-
-.header-image h1 {
-	font: 35px Georgia, Times, "Times New Roman", serif;
-	text-transform: uppercase;
-	color: #372518;
-	background-color: rgba(255, 255, 255, 0.8);
-	margin-bottom: 0;
-}
-
-.header-image h2 {
-	font: 20px/150% Georgia, "Times New Roman", Times, serif;
-	color: #ce9630;
-	background-color: rgba(255, 255, 255, 0.8);
-	margin-top: -10px;
-}
-
-.val-andre {
-    height: 300px;
-    width: 100%;
-    background: linear-gradient(to bottom, rgb(246, 243, 237) 0%, rgba(255, 255, 255, 0) 100%), url(valandre.jpg) 0 bottom / 100% no-repeat fixed;
-    opacity: 1;
-    bottom: 0;
-}
-/* Demo Sections - You can use these as guides or delete them - the scroller will work with any sort of height, fixed, undefined, or percentage based.
-The padding is very important to make sure the scrollspy picks up the right area when scrolled to. Adjust the margin and padding of sections and children
-of those sections to manage the look and feel of the site. */
-
-#intro img {
-	width: 300px;
-	margin-right: 20px;
-	margin-left: 20px;
-}
-
-section {
-    min-height: 100%;
-    padding-top: 50px;
-    text-align: center;
-}
-
-section .container {
-    max-width: 1000px;
     font-size: 120%;
-    padding-bottom: 50px;
+    font-weight: bold;
 }
 
 section h1 {
@@ -159,31 +353,5 @@ h1.font-effect-canvas-print {
     color: #ce9630;
 }
 
-pre {
-	background-color: transparent;
-	text-align: left;
-	white-space: pre;
-}
 
-.intro-section {}
 
-.about-section {
-    background-color: white;
-}
-
-.produits-section {}
-
-.acheter-section {
-    background: white;
-	font-size: 12px;
-}
-
-#google-map {
-    width: 100%;
-    height: 400px;
-}
-
-footer {
-    padding-top: 50px;
-    padding-bottom: 20px;
-}
