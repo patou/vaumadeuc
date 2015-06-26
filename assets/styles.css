@@ -8,110 +8,97 @@ body {
     width: 100%;
     height: 100%;
 }
-
 html {
     width: 100%;
     height: 100%;
 }
-
 body {
     font-family: Arial, sans-serif;
 }
-
 a {
     color: #009788;
 }
-
-a:hover,
-a:focus {
+a:hover, a:focus {
     color: #ff6c00;
     text-decoration: none;
 }
-
 .navbar-default {
-  background-color: #ffffff;
-  border-color: #f9f9f9;
+    background-color: #ffffff;
+    border-color: #f9f9f9;
 }
 .navbar-default .navbar-brand {
-  color: #59403a;
+    color: #59403a;
 }
 .navbar-default .navbar-brand:hover, .navbar-default .navbar-brand:focus {
-  color: #d0850b;
+    color: #d0850b;
 }
 .navbar-default .navbar-text {
-  color: #59403a;
+    color: #59403a;
 }
 .navbar-default .navbar-nav > li > a {
-  color: #59403a;
-  line-height: 40px;
+    color: #59403a;
+    line-height: 40px;
 }
 .navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
-  color: #d0850b;
-  font-style: italic;
+    color: #d0850b;
+    font-style: italic;
 }
 .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
-  color: #d0850b;
-  background-color: #f9f9f9;
-}
-.navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus {
-  color: #d0850b;
-  background-color: #f9f9f9;
-}
-.navbar-default .navbar-toggle {
-  border-color: #f9f9f9;
-}
-.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
-  background-color: #f9f9f9;
-}
-.navbar-default .navbar-toggle .icon-bar {
-  background-color: #59403a;
-}
-.navbar-default .navbar-collapse,
-.navbar-default .navbar-form {
-  border-color: #59403a;
-}
-.navbar-default .navbar-link {
-  color: #59403a;
-}
-.navbar-default .navbar-link:hover {
-  color: #d0850b;
-}
-
-@media (max-width: 767px) {
-  .navbar-default .navbar-nav .open .dropdown-menu > li > a {
-    color: #59403a;
-  }
-  .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover, .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
-    color: #d0850b;
-  }
-  .navbar-default .navbar-nav .open .dropdown-menu > .active > a, .navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover, .navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus {
     color: #d0850b;
     background-color: #f9f9f9;
-  }
 }
-
+.navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus {
+    color: #d0850b;
+    background-color: #f9f9f9;
+}
+.navbar-default .navbar-toggle {
+    border-color: #f9f9f9;
+}
+.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
+    background-color: #f9f9f9;
+}
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: #59403a;
+}
+.navbar-default .navbar-collapse, .navbar-default .navbar-form {
+    border-color: #59403a;
+}
+.navbar-default .navbar-link {
+    color: #59403a;
+}
+.navbar-default .navbar-link:hover {
+    color: #d0850b;
+}
+@media (max-width: 767px) {
+    .navbar-default .navbar-nav .open .dropdown-menu > li > a {
+        color: #59403a;
+    }
+    .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover, .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
+        color: #d0850b;
+    }
+    .navbar-default .navbar-nav .open .dropdown-menu > .active > a, .navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover, .navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus {
+        color: #d0850b;
+        background-color: #f9f9f9;
+    }
+}
 .navbar {
-    font-family: Arial, sans-serif;
+    font-family: "Arial Narrow", Arial, sans-serif;
     background-color: #FFFFFF;
     border: none;
     height: 70px;
 }
-
 .navbar-brand {
     font-weight: bold;
     font-size: 20px;
 }
-
 .navbar-nav {
     font-size: 15px;
 }
-
 @media(max-width:1000px) {
     .navbar-nav {
         font-size: 12px;
     }
 }
-
 @media(min-width:767px) {
     .navbar {
         padding: 20px 0;
@@ -123,104 +110,85 @@ a:focus {
         padding: 0;
     }
 }
-
 @media(min-width:770px) {
-
-
-section {
-    min-height: 100%;
-    /* padding-top: 50px; */
-
-    background-position: center;
-    text-align: center;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    /* background-attachment: fixed; */
-    /* padding-bottom: 50px; */
+    section {
+        min-height: 100%;
+        /* padding-top: 50px; */
+        background-position: center;
+        text-align: center;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        /* background-attachment: fixed; */
+        /* padding-bottom: 50px; */
+    }
+    section .container {
+        max-width: 1000px;
+        font-size: 120%;
+        padding-top: 50px;
+    }
+    section article {
+        background-color: rgba(255, 255, 255, 0.85);
+        width: 500px;
+        display: block;
+        padding: 20px;
+        padding-top: 10px;
+        float: right;
+        margin-top: 70px;
+        margin-right: 50px;
+        text-align: left;
+    }
 }
-
-section .container {
-    max-width: 1000px;
-    font-size: 120%;
-    padding-top: 50px;
-}
-
-section article {
-    background-color: rgba(255, 255, 255, 0.85);
-    width: 500px;
-    display: block;
-    padding: 20px;
-    padding-top: 10px;
-    float: right;
-    margin-top: 70px;
-    margin-right: 50px;
-    text-align: left;
-}
-
-}
-
 @media(max-width:769px) {
-
-section {
-    background-position: top;
-    text-align: left;
-    /* float: left; */
-    overflow: hidden;
-    -webkit-background-size: 100%;
-    -moz-background-size: 100%;
-    -o-background-size: 100%;
-    background-size: 100%;
-    /* background-clip: padding-box; */
-    background-repeat: no-repeat;
-    /* background-attachment: fixed; */
-    /* padding-bottom: 50px; */
-}
-
-section article {
-    display: block;
-    padding: 20px;
-    padding-top: 10px;
-    float: right;
-    margin-top: 300px;
+    section {
+        background-position: top;
+        text-align: left;
+        /* float: left; */
+        overflow: hidden;
+        -webkit-background-size: 100%;
+        -moz-background-size: 100%;
+        -o-background-size: 100%;
+        background-size: 100%;
+        /* background-clip: padding-box; */
+        background-repeat: no-repeat;
+        /* background-attachment: fixed; */
+        /* padding-bottom: 50px; */
+    }
+    section article {
+        display: block;
+        padding: 20px;
+        padding-top: 10px;
+        float: right;
+        margin-top: 300px;
         width: 100%;
+    }
 }
-
-}
-
-
 .accueil-section {
-    text-align:center;
+    text-align: center;
 }
-
 .logo-vaumadeuc {
-    margin-top:-20px;
+    margin-top: -75px;
     height: 280px;
 }
-
 .accueil-section .container-fluid {
-    margin-top:50px;
+    margin-top: 70px;
 }
-
 .accueil-section h2 {
-  color: #A1A1A1;
-  font-size: 20px;
-  text-align: left;
-  margin-left: 20px;
+    color: #A1A1A1;
+    font-size: 20px;
+    text-align: left;
+    margin-left: 20px;
 }
-
 .accueil-section p {
-  font-size: 14px;
-  text-align: left;
-  margin-left: 20px;
-  margin-right: 20px;
+    font-size: 14px;
+    text-align: left;
+    margin-left: 20px;
+    margin-right: 20px;
 }
-
 .accueil-section a {
     display: inline-block;
 }
-
 .accueil-section a img {
     opacity: 0.8;
     /*    -webkit-background-size: cover;
@@ -229,129 +197,89 @@ section article {
     size: cover;
     width: 100%;
 }
-
 .accueil-section a:hover img {
     opacity: 1;
 }
-
 #accueil-fromages {
     padding: 0px;
 }
-
 #accueil-glaces {
     padding: 0px;
 }
-
 #accueil-visiter {
     padding: 0px;
 }
-
 @media(max-width:770px) {
-
     .accueil-section a img {
         width: 100%;
     }
 }
-
 .accueil-section .row:nth-child(2) {
     bottom: 0px;
     position: absolute;
 }
-
 .fromagerie-section {
     background-image: url("../photos/fromagerie.jpg");
 }
-
 .fromagerie2-section {
     background-image: url("../photos/fromagerie2.jpg");
 }
-
 .fromagerie2-section h3 {
     display: inline;
     font-size: 13px;
 }
-
 .fromagerie2-section p {
     font-size: 12px;
 }
-
 .fromagerie3-section {
     background-image: url("../photos/fromagerie3.jpg");
 }
-
 .fromagerie4-section {
     background-image: url("../photos/fromagerie4.jpg");
 }
-
 .fromagerie5-section {
     background-image: url("../photos/fromagerie5.jpg");
 }
-
 .fromagerie6-section {
     background-image: url("../photos/fromagerie6.jpg");
 }
-
 .fromagerie7-section {
     background-image: url("../photos/fromagerie7.jpg");
 }
-
 .glaces-section {
     background-image: url("../photos/glaces.jpg");
 }
-
 .visiter-section {
     background-image: url("../photos/visiter.jpg");
 }
-
 .visiter2-section {
     background-image: url("../photos/visiter2.jpg");
 }
-
 .acheter-section {
     background-image: url("../photos/acheter.jpg");
 }
-
 .acheter-section article {
     float: left;
     margin-left: 50px;
 }
-
 @media(max-width:767px) {
     .acheter-section article {
         float: right;
         margin-left: 0px;
     }
 }
-
 .recettes-section {
     background-image: url("../photos/recettes.jpg");
 }
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-.h1,
-.h2,
-.h3,
-.h4,
-.h5,
-.h6 {
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
     font-family: Sanchez;
     color: #755e4e;
     font-size: 120%;
     font-weight: bold;
 }
-
 section h1 {
     font-size: 60px;
 }
-
 h1.font-effect-canvas-print {
     color: #ce9630;
 }
-
-
-
