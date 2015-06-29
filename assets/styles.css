@@ -257,17 +257,17 @@ a:hover, a:focus {
     bottom: 0px;
     position: absolute;
 }
-.fromagerie-section {
-    background-image: url("../photos/fromagerie.jpg");
+.fromagerie1-section {
+    background-image: url("../photos/fromagerie1.jpg");
 }
 .fromagerie2-section {
     background-image: url("../photos/fromagerie2.jpg");
 }
-.fromagerie2-section h3 {
+.fromagerie3-section h3 {
     display: inline;
     font-size: 13px;
 }
-.fromagerie2-section p {
+.fromagerie3-section p {
     font-size: 12px;
 }
 .fromagerie3-section {
@@ -285,17 +285,20 @@ a:hover, a:focus {
 .fromagerie7-section {
     background-image: url("../photos/fromagerie7.jpg");
 }
+.fromagerie8-section {
+    background-image: url("../photos/fromagerie8.jpg");
+}
 .glaces-section {
     background-image: url("../photos/glaces.jpg");
 }
 .visiter-section {
-    background-image: url("../photos/visiter.jpg");
+    background-image: url("../photos/ferme1.jpg");
 }
 .visiter2-section {
-    background-image: url("../photos/visiter2.jpg");
+    background-image: url("../photos/ferme2.jpg");
 }
 .acheter-section {
-    background-image: url("../photos/acheter.jpg");
+    background-image: url("../photos/ferme3.jpg");
 }
 .acheter-section article {
     float: left;
