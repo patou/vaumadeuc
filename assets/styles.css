@@ -149,7 +149,7 @@ a:hover, a:focus {
         padding-top: 50px;
     }
     section article {
-        background-color: rgba(255, 255, 255, 0.85);
+         background-color: rgba(255, 255, 255, 0.85);
         width: 500px;
         display: block;
         padding: 20px;
@@ -291,27 +291,27 @@ a:hover, a:focus {
 .glaces-section {
     background-image: url("../photos/glaces.jpg");
 }
-.visiter-section {
+.visiter1-section {
     background-image: url("../photos/ferme1.jpg");
 }
 .visiter2-section {
     background-image: url("../photos/ferme2.jpg");
 }
-.acheter-section {
+.visiter3-section {
     background-image: url("../photos/ferme3.jpg");
 }
+.acheter-section {
+    background-image: url("../photos/acheter.jpg");
+}
 .acheter-section article {
-    float: left;
-    margin-left: 50px;
+    width: 500px;
+	background-color: none;
 }
-@media(max-width:767px) {
-    .acheter-section article {
-        float: right;
-        margin-left: 0px;
-    }
+.recette1-section {
+    background-image: url("../photos/recette1.jpg");
 }
-.recettes-section {
-    background-image: url("../photos/recettes.jpg");
+.recette2-section {
+    background-image: url("../photos/recette2.jpg");
 }
 h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
     font-family: Sanchez;
