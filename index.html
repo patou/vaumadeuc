@@ -6,28 +6,29 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Les Fermes Vaumadeuc</title>
-    <!-- Bootstrap CSS -->
-    <link href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" rel="stylesheet">
-    <link href="assets/styles.css" rel="stylesheet">
-    <link href="assets/footer.css" rel="stylesheet">
-    <link href='http://fonts.googleapis.com/css?family=Sanchez' rel='stylesheet' type='text/css'>
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-        <![endif]-->
-</head>
-<!-- The #page-top ID is part of the scrolling feature - the data-spy and data-target are part of the built-in Bootstrap scrollspy function -->
+    <script src="assets/jquery-1.11.3.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="assets/jquery.easing.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="assets/jquery.fullPage.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="assets/jquery.slimscroll.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="assets/script.js" type="text/javascript" charset="utf-8"></script>
 
-<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+    <link href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" rel="stylesheet">
+
+    <link href='http://fonts.googleapis.com/css?family=Sanchez' rel='stylesheet' type='text/css'>
+
+
+    <link rel="stylesheet" href="assets/jquery.fullPage.css" type="text/css" media="screen">
+    <link rel="stylesheet" href="assets/styles.css" type="text/css" media="screen">
+</head>
+
+<body>
     <!-- Navigation -->
     <nav class="navbar navbar-default navbar-fixed-top top-nav-collapse" role="navigation">
         <div class="container">
             <div class="navbar-header page-scroll">
                 <a class="navbar-brand page-scroll" href="#page-top">
-                    <img src="assets/Logo_site_petit.png" style="height: 70px; margin-top: -15px;" alt="">
-                    <img src="assets/signature_300x50px.png" style="height: 25px;   margin-top: -20px; margin-left: 10px;" alt="">
+                    <img id="logo-vaumadeuc-petit" src="assets/Logo_site_petit.png" alt="">
+                    <img id="logo-signature" src="assets/signature_300x50px.png" alt="">
                 </a>
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
@@ -58,208 +59,266 @@
         </div>
         <!-- /.container -->
     </nav>
-    <!-- accueil Section -->
-    <section id="accueil" class="accueil-section">
-        <div class="container">
-        <div class="row">
-            <img class="logo-vaumadeuc" src="assets/Logo_site_accueil.png" alt="logo">
-        </div>
-        </div>
-        <div class="container-fluid">
-        <div class="row">
-            <div id="accueil-fromages" class="col-sm-4">
-                <a class="page-scroll accueil-fromages" href="#fromagerie">
-                    <img src="assets/accueil_fromages.jpg" alt="fromages">
-                </a>
-                <h2>Nos fromages</h2>
-                <p>De la production de lait à la création de fromages : un parcours initié par le goût de créer et de partager le fruit de notre travail...</p>
+    <div id="fullpage">
+
+        <section id="accueil" class="accueil-section section">
+            <div class="container">
+                <div class="row">
+                    <img class="logo-vaumadeuc" src="assets/Logo_site_accueil.png" alt="logo">
+                </div>
             </div>
-            <div id="accueil-glaces" class="col-sm-4">
-                <a class="page-scroll accueil-glaces" href="#glaces">
-                    <img src="assets/accueil_glaces.jpg" alt="glaces">
-                </a>
-                <h2>Nos glaces</h2>
-                <p>Le lait et la crème sont les ingrédients de base de la glace artisanale. L’envie d’en proposer nous est donc venue presque naturellement...</p>
+            <div class="container-fluid">
+                <div class="row">
+                    <div id="accueil-fromages" class="col-sm-4">
+                        <a class="page-scroll accueil-fromages" href="#fromagerie">
+                            <img src="assets/accueil_fromages.jpg" alt="fromages">
+                        </a>
+                        <h2>Nos fromages</h2>
+                        <p>De la production de lait à la création de fromages : un parcours initié par le goût de créer et de partager le fruit de notre travail...</p>
+                    </div>
+                    <div id="accueil-glaces" class="col-sm-4">
+                        <a class="page-scroll accueil-glaces" href="#glaces">
+                            <img src="assets/accueil_glaces.jpg" alt="glaces">
+                        </a>
+                        <h2>Nos glaces</h2>
+                        <p>Le lait et la crème sont les ingrédients de base de la glace artisanale. L’envie d’en proposer nous est donc venue presque naturellement...</p>
+                    </div>
+                    <div id="accueil-visiter" class="col-sm-4">
+                        <a class="page-scroll accueil-visiter" href="#visiter">
+                            <img src="assets/accueil_visiter.jpg" alt="visiter">
+                        </a>
+                        <h2>Terroir de bord de mer</h2>
+                        <p>Dans notre région, de la terre à la mer, il n’y a qu’un pas : de la mer, vous apercevez l’étendue verte des pâturages et vice-versa...</p>
+                    </div>
+                </div>
             </div>
-            <div id="accueil-visiter" class="col-sm-4">
-                <a class="page-scroll accueil-visiter" href="#visiter">
-                    <img src="assets/accueil_visiter.jpg" alt="visiter">
-                </a>
-                <h2>Terroir de bord de mer</h2>
-                <p>Dans notre région, de la terre à la mer, il n’y a qu’un pas : de la mer, vous apercevez l’étendue verte des pâturages et vice-versa...</p>
-            </div>
-            </div>
-        </div>
-    </section>
-    <!-- fromagerie Section -->
-    <section id="fromagerie" class="fromagerie-section">
-        <article>
-            <h2>De la sélection du lait à l’affinage</h2>
-            <p>Exploitant agricole de père en fils, l’envie de donner naissance à un fromage issu de notre terroir est née il y a presque 30 ans.</p>
-            <p>
-                Quel que soit le fromage, les étapes de sa fabrication sont les mêmes ; le caractère du fromage découlera de la qualité du terroir du lait utilisé et de la manière dont chaque étape aura été menée.</p>
-            <p>Nos fromages sont fabriqués exclusivement avec « du lait cru ». Le lait cru est le lait à son état le plus naturel. Le lait cru qui contient des bactéries naturelles, donne aux fromages des parfums variés et raffinés.</p>
-            <p>
-                Travailler du lait cru implique que l’on transforme vite après la traite, cela reste donc le privilège des ateliers artisanaux comme la fromagerie du Vaumadeuc. Nous utilisons uniquement du lait de vache chaud issu de la traite du matin.</p>
-        </article>
-    </section>
-    <section id="fromagerie2" class="fromagerie2-section">
-        <article>
-            <h2>De la sélection du lait à l’affinage</h2>
-            <p>Les étapes successives qui transformeront le lait en fromage sont les suivantes :</p>
-            <h3>Le caillage</h3>
-            <p>Il consiste à solidifier le lait à l’aide de la présure et des ferments lactiques. Le lait coagule, il prend l’aspect d’un yaourt.</p>
-            <h3>Le décaillage</h3>
-            <p>Cette opération consiste à trancher le caillé pour séparer la matière sèche : le fromage, et l’eau du lait : le lactosérum.</p>
-            <h3>Le brassage</h3>
-            <p>le caillé et le sérum sont brassés afin de mieux éliminer l’eau.. Le caillé, plus lourd, se dépose au fond de la cuve. Le sérum est retiré.</p>
-            <h3>Le moulage et le pressage</h3>
-            <p>Le caillé est mis en forme dans des moules garnis de toiles de lin. Ils sont ensuite disposés sous la presse pendant 24h. C’est de cette étape que provient le mot fromage. Le mot latin « foma » signifie « forme » mise en forme du caillé dans le moule.</p>
-            <h3>Le salage</h3>
-            <p>Après de longues heures d’égouttage les fromages sont démoulés et immergés dans une saumure saturée de sel. Le sel joue un rôle très important pour l’aspect de l’l’arôme du fromage, il permet une meilleure conservation.</p>
-            <h3>L'affinage</h3>
-            <p>C’est le temps pendant lequel, sous l’action des ferments lactiques, la pâte du fromage va changer de texture et de goût. Elle va se transformer peu à peu pour développer ses arômes et saveurs. Le sel va migrer dans la pâte, la croûte va se transformer peu à peu sous l’action des champignons. Elle devient fleurie pour la Tomme. L’affinage dure entre 8 et 12 semaines.</p>
-        </article>
-    </section>
-    <section id="fromagerie3" class="fromagerie3-section">
-        <article>
-            <h2>La Tomme de Vaumadeuc</h2>
-            <p>Premier né de notre production fromagère, la tomme est affinée entre 8 et 12 semaines dans une cave à 12° C et 90° d’hydrométrie. Les meules sont retournées tous les jours.</p>
-            <p>
-                Aspect : croûte fleurie, pâte ferme, texture fine
-                <br> Arôme : relevé, bien typé
-                <br> Saveur : affirmée, légèrement poivrée</p>
-            <p>Accompagnement : un vin puissant type Côtes du Rhône, Bourgogne ou Beaujolais. Elle s’apprécie aussi avec une confiture de cerises noires. </p>
-            <p>
-                Les amateurs de la croûte de la Tomme-du-Vaumadeuc sont des adeptes de sensations fortes. La Tomme du Vaumadeuc est délicieuse fondue dans des galettes de blé noir.</p>
-        </article>
-    </section>
-    <section id="fromagerie4" class="fromagerie4-section">
-        <article>
-            <h2>Le Val-Doré</h2>
-            <p>C’est un fromage de la gamme des pâtes pressées non cuite. Pendant l’affinage il est lavé avec de l’eau salée tous les deux jours. Ce soin lui donne une croûte orangée d’une saveur douce et moyennement acidulée.</p>
-            <p>
-                Aspect : croûte lavée, pâte souple, texture fine
-                <br> Arôme : délicat
-                <br> Saveur : douce, légèrement acide</p>
-            <p>Accompagnement : un peu de beurre pousse la saveur à son maximum. Le Val-Doré peut être accompagné d’un vin chaleureux de Bordeaux ou d’un vin de Loire au bouquet affirmé.</p>
-        </article>
-    </section>
-    <section id="fromagerie5" class="fromagerie5-section">
-        <article>
-            <h2>Le Grand-Madeuc</h2>
-            <p>Ce fromage se présente sous la forme de meules de 9 à 10 Kilos. L’affinage dure de 4 à 12 mois en cave fraiche et humide avec lavages.</p>
-            <p>Aspect : pâte pressée, mi- cuite, souple avec des trous
-                <br> Arôme : faiblement lactique
-                <br> Saveur : Fruitée avec des arômes floraux.</p>
-            <p>Accompagnement : Vin blanc, côte de Beaune ou Beaujolais.</p>
-        </article>
-    </section>
-    <section id="fromagerie6" class="fromagerie6-section">
-        <article>
-            <h2>Fromage blanc campagne.</h2>
-            <p>C’est un lait caillé avec un égouttage traditionnel en sac de toile. Il est une bonne source de calcium et de protéines. Il ne subit aucun affinage. </p>
-            <p>Aspect : Blanc, texture ferme, avec des morceaux de caillé issus du moulage manuel.
-                <br> Arôme : léger
-                <br> Saveur : douce et légèrement acidulée.</p>
-            <p>Accompagnement : Se déguste au dessert, avec de la confiture ou du miel, des fruits. Il peut être battu au fouet pour devenir onctueux. Il est utilisé à la préparation d’entrées avec des échalotes, herbes, épices…Il est indispensable à la réalisation du cheescake</p>
-            <h2>Faiselle</h2>
-            <p>C’est un lait caillé moulé traditionnellement à la louche. Il prend son nom du moule à fromage dans lequel il s’égoutte. Il se consomme et a les mêmes caractéristiques que le fromage blanc.</p>
-        </article>
-    </section>
-    <section id="fromagerie7" class="fromagerie7-section">
-        <article>
-            <h2>Crème fraîche Vaumadeuc</h2>
-            <p>C’est une crème d’exception fabriquée à l’ancienne.</p>
-            <p>
-                Elle est élaborée à partir du lait cru de la traite du soir. Le lait est versé dans une écrémeuse qui sépare la crème du lait. La crème est mise en maturation pendant une douzaine d’heures afin de développer ses arômes floraux et son onctuosité si appréciée.</p>
-            <p>
-                Cette crème fraiche est une vraie gourmandise, elle est idéale pour une dégustation nature avec des fruits rouges et pour une cuisine savoureuse, chantilly, sauce…</p>
-        </article>
-    </section>
-    <!-- glaces Section -->
-    <section id="glaces" class="glaces-section">
-        <article>
-            <h2>Le bon goût de la simplicité</h2>
-            <p>Pour nous, c’est une autre façon de mettre en lumière la qualité des produits de notre terroir : du lait, des œufs, de la crème. Aucun conservateur, colorant ou arôme artificiel n’entre dans la fabrication de nos glaces.</p>
-            <p>A vous de choisir parmi les cinq parfums proposés :
-                <br> - Caramel au beurre salé : un classique de la Bretagne
-                <br> - Chocolat : le parfum incontournable, de 7 à 77 ans
-                <br> - fleur de lait : un goût de Chantilly glacée donne toute sa légèreté à cette glace. Vous l’apprécierez aussi accompagnée de fruits rouges. C’est notre spécialité.
-                <br> - noisette : succombez à l’authenticité de ce parfum ; à déguster avec d’autres fruits secs tels qu’amandes, noix ou raisins secs.
-                <br> - vanille : un grand classique au parfum 100 % naturel : nous l’extrayons des gousses de vanille Bourbon de Madagascar, travaillées dans nos locaux.</p>
-            <p>Présentées en portion de 1/2 litre (4 à 6 personnes), elles sont vendues uniquement sur place mais peuvent être emportées dans un sac ou une boite isotherme.</p>
-        </article>
-    </section>
-    <!-- visiter Section -->
-    <section id="visiter" class="visiter-section">
-        <article>
-            <h2>La mer pour horizon</h2>
-            <p>Le terroir de Vaumadeuc est situé à quelques encablures du port de Dahouët, dans les Côtes d’Armor. Les bateaux armés pour la pêche à la morue en Islande ou à Terre Neuve partaient de ce port. Pour honorer la mémoire des nombreuses victimes de cette pêche, une statue de Notre-Dame fut érigée à l’extrémité du quai. Elle est aujourd’hui le symbole de Dahouët.</p>
-            <p>
-                Nos champs dominent ce paysage maritime, nos vaches respirent le bon air marin !!!</p>
-        </article>
-    </section>
-    <section id="visiter2" class="visiter2-section">
-        <article>
-            <h2>La ferme du Vaumadeuc</h2>
-            <p>La ferme du Vaumadeuc fait partie de ce paysage rural : exploitation agricole familiale de père en fils, elle se tourne aujourd’hui exclusivement vers la fabrication de fromages et de glaces qui sont vendus sur le site même ou sur certains marchés et commerces de la région. Nous vous accueillons avec plaisir toute l’année.</p>
-            <p>
-                Pendant les vacances scolaires : 9h-19h sauf dimanche</p>
-            <p>
-                Hors vacances scolaires :
-                <br> 10h-16h sauf dimanche et lundi
-                <br> et sur rendez-vous au :
-                <br> 02 96 72 85 82</p>
-            <p>
-                Sur les marchés :
-                <br> Mars à novembre
-                <br> Mercredi à Matignon
-                <br> Vendredi au Val André
-                <br> Juillet et aout
-                <br> Pléneuf.
-            </p>
-        </article>
-    </section>
-    <!-- recettes Section -->
-    <section id="recettes" class="recettes-section">
-        <article>
-            <h2>Des recettes plaisir à découvrir ici</h2>
-            <p>La traditionelle tarte au fromage, pour 6 personnes :
-            </p>
-            <p>Ingrédients :
-            </p>
-            <p>- 1/4 de Tomme
-                <br>- Une pâte feuilletée
-                <br>- 4 Tomates
-            </p>
-            <p>Préparation :
-            </p>
-            <p>Couper en tranche la tomme et la placer sur la pâte.
-                <br>Poser dessus les tomates.
-                <br>Ajouter de l'huile d'olive, du thym, saler, poivre.
-            </p>
-            <p>Laisser cuire au four 20mn
-            </p>
-            <p>Facile, rapide et délicieux !
-                <br>(Servir avec une salade)
-            </p>
-        </article>
-    </section>
-    <div>
-        <!-- Footer Widgets -->
-        <div>
-            Copyright © 2015, SAS Les Fermes Vaumadeuc, Tous droits réservés.
-        </div>
-        <!-- Footer Widgets / End -->
+        </section>
+        <!-- fromagerie Section -->
+        <section id="fromagerie" class="fromagerie-section section">
+            <article>
+                <h2>De la sélection du lait à l’affinage</h2>
+                <p>Exploitant agricole de père en fils, l’envie de donner naissance à un fromage issu de notre terroir est née il y a presque 30 ans.</p>
+                <p>
+                    Quel que soit le fromage, les étapes de sa fabrication sont les mêmes ; le caractère du fromage découlera de la qualité du terroir du lait utilisé et de la manière dont chaque étape aura été menée.</p>
+                <p>Nos fromages sont fabriqués exclusivement avec « du lait cru ». Le lait cru est le lait à son état le plus naturel. Le lait cru qui contient des bactéries naturelles, donne aux fromages des parfums variés et raffinés.</p>
+                <p>
+                    Travailler du lait cru implique que l’on transforme vite après la traite, cela reste donc le privilège des ateliers artisanaux comme la fromagerie du Vaumadeuc. Nous utilisons uniquement du lait de vache chaud issu de la traite du matin.</p>
+            </article>
+        </section>
+        <section id="fromagerie2" class="fromagerie2-section section">
+            <article>
+                <h2>De la sélection du lait à l’affinage</h2>
+                <p>Les étapes successives qui transformeront le lait en fromage sont les suivantes :</p>
+                <h3>Le caillage</h3>
+                <p>Il consiste à solidifier le lait à l’aide de la présure et des ferments lactiques. Le lait coagule, il prend l’aspect d’un yaourt.</p>
+                <h3>Le décaillage</h3>
+                <p>Cette opération consiste à trancher le caillé pour séparer la matière sèche : le fromage, et l’eau du lait : le lactosérum.</p>
+                <h3>Le brassage</h3>
+                <p>le caillé et le sérum sont brassés afin de mieux éliminer l’eau.. Le caillé, plus lourd, se dépose au fond de la cuve. Le sérum est retiré.</p>
+                <h3>Le moulage et le pressage</h3>
+                <p>Le caillé est mis en forme dans des moules garnis de toiles de lin. Ils sont ensuite disposés sous la presse pendant 24h. C’est de cette étape que provient le mot fromage. Le mot latin « foma » signifie « forme » mise en forme du caillé
+                    dans le moule.</p>
+                <h3>Le salage</h3>
+                <p>Après de longues heures d’égouttage les fromages sont démoulés et immergés dans une saumure saturée de sel. Le sel joue un rôle très important pour l’aspect de l’l’arôme du fromage, il permet une meilleure conservation.</p>
+                <h3>L'affinage</h3>
+                <p>C’est le temps pendant lequel, sous l’action des ferments lactiques, la pâte du fromage va changer de texture et de goût. Elle va se transformer peu à peu pour développer ses arômes et saveurs. Le sel va migrer dans la pâte, la croûte
+                    va se transformer peu à peu sous l’action des champignons. Elle devient fleurie pour la Tomme. L’affinage dure entre 8 et 12 semaines.</p>
+            </article>
+        </section>
+        <section id="fromagerie3" class="fromagerie3-section section">
+            <article>
+                <h2>La Tomme de Vaumadeuc</h2>
+                <p>Premier né de notre production fromagère, la tomme est affinée entre 8 et 12 semaines dans une cave à 12° C et 90° d’hydrométrie. Les meules sont retournées tous les jours.</p>
+                <p>
+                    Aspect : croûte fleurie, pâte ferme, texture fine
+                    <br> Arôme : relevé, bien typé
+                    <br> Saveur : affirmée, légèrement poivrée</p>
+                <p>Accompagnement : un vin puissant type Côtes du Rhône, Bourgogne ou Beaujolais. Elle s’apprécie aussi avec une confiture de cerises noires. </p>
+                <p>
+                    Les amateurs de la croûte de la Tomme-du-Vaumadeuc sont des adeptes de sensations fortes. La Tomme du Vaumadeuc est délicieuse fondue dans des galettes de blé noir.</p>
+            </article>
+        </section>
+        <section id="fromagerie4" class="fromagerie4-section section">
+            <article>
+                <h2>Le Val-Doré</h2>
+                <p>C’est un fromage de la gamme des pâtes pressées non cuite. Pendant l’affinage il est lavé avec de l’eau salée tous les deux jours. Ce soin lui donne une croûte orangée d’une saveur douce et moyennement acidulée.</p>
+                <p>
+                    Aspect : croûte lavée, pâte souple, texture fine
+                    <br> Arôme : délicat
+                    <br> Saveur : douce, légèrement acide</p>
+                <p>Accompagnement : un peu de beurre pousse la saveur à son maximum. Le Val-Doré peut être accompagné d’un vin chaleureux de Bordeaux ou d’un vin de Loire au bouquet affirmé.</p>
+            </article>
+        </section>
+        <section id="fromagerie5" class="fromagerie5-section section">
+            <article>
+                <h2>Le Grand-Madeuc</h2>
+                <p>Ce fromage se présente sous la forme de meules de 9 à 10 Kilos. L’affinage dure de 4 à 12 mois en cave fraiche et humide avec lavages.</p>
+                <p>Aspect : pâte pressée, mi- cuite, souple avec des trous
+                    <br> Arôme : faiblement lactique
+                    <br> Saveur : Fruitée avec des arômes floraux.</p>
+                <p>Accompagnement : Vin blanc, côte de Beaune ou Beaujolais.</p>
+            </article>
+        </section>
+        <section id="fromagerie6" class="fromagerie6-section section">
+            <article>
+                <h2>Fromage blanc campagne.</h2>
+                <p>C’est un lait caillé avec un égouttage traditionnel en sac de toile. Il est une bonne source de calcium et de protéines. Il ne subit aucun affinage. </p>
+                <p>Aspect : Blanc, texture ferme, avec des morceaux de caillé issus du moulage manuel.
+                    <br> Arôme : léger
+                    <br> Saveur : douce et légèrement acidulée.</p>
+                <p>Accompagnement : Se déguste au dessert, avec de la confiture ou du miel, des fruits. Il peut être battu au fouet pour devenir onctueux. Il est utilisé à la préparation d’entrées avec des échalotes, herbes, épices…Il est indispensable à
+                    la réalisation du cheescake</p>
+                <h2>Faiselle</h2>
+                <p>C’est un lait caillé moulé traditionnellement à la louche. Il prend son nom du moule à fromage dans lequel il s’égoutte. Il se consomme et a les mêmes caractéristiques que le fromage blanc.</p>
+            </article>
+        </section>
+        <section id="fromagerie7" class="fromagerie7-section section">
+            <article>
+                <h2>Crème fraîche Vaumadeuc</h2>
+                <p>C’est une crème d’exception fabriquée à l’ancienne.</p>
+                <p>
+                    Elle est élaborée à partir du lait cru de la traite du soir. Le lait est versé dans une écrémeuse qui sépare la crème du lait. La crème est mise en maturation pendant une douzaine d’heures afin de développer ses arômes floraux et son onctuosité si appréciée.</p>
+                <p>
+                    Cette crème fraiche est une vraie gourmandise, elle est idéale pour une dégustation nature avec des fruits rouges et pour une cuisine savoureuse, chantilly, sauce…</p>
+            </article>
+        </section>
+        <!-- glaces Section -->
+        <section id="glaces" class="glaces-section section">
+            <article>
+                <h2>Le bon goût de la simplicité</h2>
+                <p>Pour nous, c’est une autre façon de mettre en lumière la qualité des produits de notre terroir : du lait, des œufs, de la crème. Aucun conservateur, colorant ou arôme artificiel n’entre dans la fabrication de nos glaces.</p>
+                <p>A vous de choisir parmi les cinq parfums proposés :
+                    <br> - Caramel au beurre salé : un classique de la Bretagne
+                    <br> - Chocolat : le parfum incontournable, de 7 à 77 ans
+                    <br> - fleur de lait : un goût de Chantilly glacée donne toute sa légèreté à cette glace. Vous l’apprécierez aussi accompagnée de fruits rouges. C’est notre spécialité.
+                    <br> - noisette : succombez à l’authenticité de ce parfum ; à déguster avec d’autres fruits secs tels qu’amandes, noix ou raisins secs.
+                    <br> - vanille : un grand classique au parfum 100 % naturel : nous l’extrayons des gousses de vanille Bourbon de Madagascar, travaillées dans nos locaux.</p>
+                <p>Présentées en portion de 1/2 litre (4 à 6 personnes), elles sont vendues uniquement sur place mais peuvent être emportées dans un sac ou une boite isotherme.</p>
+            </article>
+        </section>
+        <!-- visiter Section -->
+        <section id="visiter" class="visiter-section section">
+            <article>
+                <h2>La mer pour horizon</h2>
+                <p>Le terroir de Vaumadeuc est situé à quelques encablures du port de Dahouët, dans les Côtes d’Armor. Les bateaux armés pour la pêche à la morue en Islande ou à Terre Neuve partaient de ce port. Pour honorer la mémoire des nombreuses victimes
+                    de cette pêche, une statue de Notre-Dame fut érigée à l’extrémité du quai. Elle est aujourd’hui le symbole de Dahouët.</p>
+                <p>
+                    Nos champs dominent ce paysage maritime, nos vaches respirent le bon air marin !!!</p>
+            </article>
+        </section>
+        <section id="visiter2" class="visiter2-section section">
+            <article>
+                <h2>La ferme du Vaumadeuc</h2>
+                <p>La ferme du Vaumadeuc fait partie de ce paysage rural : exploitation agricole familiale de père en fils, elle se tourne aujourd’hui exclusivement vers la fabrication de fromages et de glaces qui sont vendus sur le site même ou sur certains
+                    marchés et commerces de la région. Nous vous accueillons avec plaisir toute l’année.</p>
+                <p>
+                    Pendant les vacances scolaires : 9h-19h sauf dimanche</p>
+                <p>
+                    Hors vacances scolaires :
+                    <br> 10h-16h sauf dimanche et lundi
+                    <br> et sur rendez-vous au :
+                    <br> 02 96 72 85 82</p>
+                <p>
+                    Sur les marchés :
+                    <br> Mars à novembre
+                    <br> Mercredi à Matignon
+                    <br> Vendredi au Val André
+                    <br> Juillet et aout
+                    <br> Pléneuf.
+                </p>
+            </article>
+        </section>
+        <!-- recettes Section -->
+        <section id="recettes" class="recettes-section section">
+            <article>
+                <h2>Des recettes plaisir à découvrir ici</h2>
+                <p>La traditionelle tarte au fromage, pour 6 personnes :
+                </p>
+                <p>Ingrédients :
+                </p>
+                <p>- 1/4 de Tomme
+                    <br>- Une pâte feuilletée
+                    <br>- 4 Tomates
+                </p>
+                <p>Préparation :
+                </p>
+                <p>Couper en tranche la tomme et la placer sur la pâte.
+                    <br>Poser dessus les tomates.
+                    <br>Ajouter de l'huile d'olive, du thym, saler, poivre.
+                </p>
+                <p>Laisser cuire au four 20mn
+                </p>
+                <p>Facile, rapide et délicieux !
+                    <br>(Servir avec une salade)
+                </p>
+            </article>
+        </section>
     </div>
-    <!-- jQuery -->
-    <script src="http://code.jquery.com/jquery.js"></script>
-    <!-- Bootstrap JavaScript -->
-    <script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
-    <!-- Scrolling Nav JavaScript -->
-    <script src="assets/jquery.easing.min.js"></script>
-    <script src="assets/scrolling-nav.js"></script>
+    <script>
+        $(document).ready(function() {
+            if (document.body.clientWidth > 769) {
+
+
+                $('#fullpage').fullpage({
+                    //Navigation
+                    // menu: true,
+                    // lockAnchors: true,
+                    // anchors:['firstPage', 'secondPage'],
+                    navigation: true,
+                    navigationPosition: 'right',
+                    // navigationTooltips: ['firstSlide', 'secondSlide'],
+                    // showActiveTooltip: false,
+                    // slidesNavigation: true,
+                    // slidesNavPosition: 'bottom',
+
+                    //Scrolling
+                    // css3: true,
+                    // scrollingSpeed: 700,
+                    // autoScrolling: true,
+                    // fitToSection: true,
+                    scrollBar: true,
+                    // easing: 'easeInOutCubic',
+                    // easingcss3: 'ease',
+                    // loopBottom: false,
+                    // loopTop: false,
+                    // loopHorizontal: true,
+                    // continuousVertical: false,
+                    // normalScrollElements: '#element1, .element2',
+                    // scrollOverflow: false,
+                    // touchSensitivity: 15,
+                    // normalScrollElementTouchThreshold: 5,
+
+                    //Accessibility
+                    // keyboardScrolling: true,
+                    // animateAnchor: true,
+                    // recordHistory: true,
+
+                    //Design
+                    controlArrows: false,
+                    verticalCentered: false,
+                    // resize : true,
+                    // sectionsColor : ['#ccc', '#fff'],
+                    paddingTop: '70px',
+                    // paddingBottom: '10px',
+                    fixedElements: 'nav, #header, .footer',
+                    // responsiveWidth: 0,
+                    // responsiveHeight: 0,
+
+                    //Custom selectors
+                    sectionSelector: 'section',
+                    slideSelector: '.slide',
+
+                    //events
+                    // onLeave: function(index, nextIndex, direction){},
+                    // afterLoad: function(anchorLink, index){},
+                    // afterRender: function(){},
+                    // afterResize: function(){},
+                    // afterSlideLoad: function(anchorLink, index, slideAnchor, slideIndex){},
+                    // onSlideLeave: function(anchorLink, index, slideIndex, direction, nextSlideIndex){}
+                });
+            }
+        });
+    </script>
 </body>
 
 </html>

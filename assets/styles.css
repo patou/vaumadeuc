@@ -25,6 +25,8 @@ a:hover, a:focus {
 .navbar-default {
     background-color: #ffffff;
     border-color: #f9f9f9;
+    display: none;
+
 }
 .navbar-default .navbar-brand {
     color: #59403a;
@@ -69,7 +71,32 @@ a:hover, a:focus {
 .navbar-default .navbar-link:hover {
     color: #d0850b;
 }
+.navbar {
+    font-family: "Arial Narrow", Arial, sans-serif;
+    background-color: rgba(255, 255, 255, 0.95);
+    border: none;
+    height: 70px;
+}
+.navbar-brand {
+    font-weight: bold;
+    font-size: 20px;
+}
+.navbar-nav {
+    font-size: 15px;
+}
+#logo-vaumadeuc-petit {
+    height: 70px; margin-top: -15px;
+}
+#logo-signature {
+    height: 25px;   margin-top: -20px; margin-left: 10px;
+}
 @media (max-width: 767px) {
+    .navbar {
+        height: 50px;
+    }
+    .navbar-default .navbar-nav > li > a {
+        line-height: 20px;
+    }
     .navbar-default .navbar-nav .open .dropdown-menu > li > a {
         color: #59403a;
     }
@@ -80,19 +107,9 @@ a:hover, a:focus {
         color: #d0850b;
         background-color: #f9f9f9;
     }
-}
-.navbar {
-    font-family: "Arial Narrow", Arial, sans-serif;
-    background-color: #FFFFFF;
-    border: none;
-    height: 70px;
-}
-.navbar-brand {
-    font-weight: bold;
-    font-size: 20px;
-}
-.navbar-nav {
-    font-size: 15px;
+    #logo-vaumadeuc-petit {
+        height: 50px; margin-top: -15px;
+    }
 }
 @media(max-width:1000px) {
     .navbar-nav {
@@ -108,6 +125,9 @@ a:hover, a:focus {
     }
     .top-nav-collapse {
         padding: 0;
+    }
+    #fp-nav {
+        display: none;
     }
 }
 @media(min-width:770px) {
@@ -135,10 +155,21 @@ a:hover, a:focus {
         padding: 20px;
         padding-top: 10px;
         float: right;
-        margin-top: 70px;
+        /*margin-top: 70px; */
         margin-right: 50px;
+        z-index: 10;
         text-align: left;
     }
+    .fleche {
+        position: fixed;
+        /* float: right; */
+        bottom: 50px;
+        right: 100px;
+
+        z-index: 9;
+        height: 50px;
+        /* overflow: hidden; */
+}
 }
 @media(max-width:769px) {
     section {
@@ -167,9 +198,17 @@ a:hover, a:focus {
 .accueil-section {
     text-align: center;
 }
+@media(min-width:770px) {
 .logo-vaumadeuc {
-    margin-top: -75px;
+    margin-top: -145px;
     height: 280px;
+}
+}
+@media(max-width:769px) {
+.logo-vaumadeuc {
+    margin-top: 50px;
+    height: 280px;
+}
 }
 .accueil-section .container-fluid {
     margin-top: 70px;
@@ -274,7 +313,7 @@ a:hover, a:focus {
 h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
     font-family: Sanchez;
     color: #755e4e;
-    font-size: 120%;
+    font-size: 160%;
     font-weight: bold;
 }
 section h1 {
