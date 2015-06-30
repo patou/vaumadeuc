@@ -265,9 +265,9 @@ a:hover, a:focus {
 }
 
 
-/*.fromagerie3-section p {
+.fromagerie3-section p {
     font-size: 12px;
-}*/
+}
 
 .fromagerie3-section {
     background-image: url("../photos/fromagerie3.jpg");
