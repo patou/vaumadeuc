@@ -325,3 +325,22 @@ section h1 {
 h1.font-effect-canvas-print {
     color: #ce9630;
 }
+
+
+
+/* style pour le bloc vente en ligne*/
+
+.ss-q-title {
+  color: rgb(80,80,80);
+  font-weight: 700;
+  font-size: 1.40rem;
+  font-style: normal;
+}
+
+.ss-q-short {
+	border: 1px solid #bbb;
+	padding: 0.4em 0.6em;
+}
+
+
+
