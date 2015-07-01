@@ -160,16 +160,19 @@ a:hover, a:focus {
         z-index: 10;
         text-align: left;
     }
-    .fleche {
-        position: fixed;
-        /* float: right; */
-        bottom: 50px;
-        right: 100px;
+	
+	.fleche {
+			margin-bottom: 100px;
+	        bottom: 0px;
+	        right: 250px;
+			height:10px;
+			z-index:20;
+	        /* overflow: hidden; */
+	}
+	.fleche:hover {
+		shadow: 2px;
+	}
 
-        z-index: 9;
-        height: 50px;
-        /* overflow: hidden; */
-}
 }
 @media(max-width:769px) {
     section {
@@ -229,7 +232,7 @@ a:hover, a:focus {
     display: inline-block;
 }
 .accueil-section a img {
-    opacity: 0.8;
+    opacity: 1;
     /*    -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;*/
@@ -237,7 +240,7 @@ a:hover, a:focus {
     width: 100%;
 }
 .accueil-section a:hover img {
-    opacity: 1;
+    opacity: 0.8;
 }
 #accueil-fromages {
     padding: 0px;
@@ -302,6 +305,18 @@ a:hover, a:focus {
 .acheter-section {
     background-image: url("../photos/acheter.jpg");
 }
+
+.visiter3-section article {
+    background-image: url("plan.png");
+	background-repeat: no-repeat;
+	background-position: bottom;
+	height: 600px;
+}
+
+.plan {
+	margin-bottom: 200px;
+}
+
 .acheter-section article {
     width: 500px;
 	background-color: none;
