@@ -1,4 +1,4 @@
-# README
+# TODO
 
 - mettre toutes les photos à la même taille et compressées: OK
 - mettre les légendes et le menu: OK
@@ -7,3 +7,4 @@
 - "carte google maps"
 - V majuscule pour vanille
 
+En ligne sur [fromagerievaumadeuc.com](http://fromagerievaumadeuc.com)
